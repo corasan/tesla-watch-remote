@@ -18,6 +18,7 @@
 		BACBA25D247DAD4800B402EE /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BACBA25C247DAD4800B402EE /* NotificationView.swift */; };
 		BACBA25F247DAD4800B402EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BACBA25E247DAD4800B402EE /* Assets.xcassets */; };
 		BACBA262247DAD4800B402EE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BACBA261247DAD4800B402EE /* Preview Assets.xcassets */; };
+		BACBA273247DB06000B402EE /* ProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = BACBA272247DB06000B402EE /* ProgressBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +79,7 @@
 		BACBA261247DAD4800B402EE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BACBA263247DAD4800B402EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BACBA264247DAD4800B402EE /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		BACBA272247DB06000B402EE /* ProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +130,7 @@
 				BACBA258247DAD4800B402EE /* ExtensionDelegate.swift */,
 				BACBA25A247DAD4800B402EE /* NotificationController.swift */,
 				BACBA25C247DAD4800B402EE /* NotificationView.swift */,
+				BACBA272247DB06000B402EE /* ProgressBar.swift */,
 				BACBA25E247DAD4800B402EE /* Assets.xcassets */,
 				BACBA263247DAD4800B402EE /* Info.plist */,
 				BACBA264247DAD4800B402EE /* PushNotificationPayload.apns */,
@@ -276,6 +279,7 @@
 				BACBA255247DAD4800B402EE /* ContentView.swift in Sources */,
 				BACBA25B247DAD4800B402EE /* NotificationController.swift in Sources */,
 				BACBA259247DAD4800B402EE /* ExtensionDelegate.swift in Sources */,
+				BACBA273247DB06000B402EE /* ProgressBar.swift in Sources */,
 				BACBA25D247DAD4800B402EE /* NotificationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
