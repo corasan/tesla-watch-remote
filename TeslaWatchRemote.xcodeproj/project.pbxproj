@@ -1,0 +1,576 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BACBA241247DAD4500B402EE /* TeslaWatchRemote WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = BACBA240247DAD4500B402EE /* TeslaWatchRemote WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		BACBA247247DAD4500B402EE /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BACBA245247DAD4500B402EE /* Interface.storyboard */; };
+		BACBA249247DAD4700B402EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BACBA248247DAD4700B402EE /* Assets.xcassets */; };
+		BACBA250247DAD4800B402EE /* TeslaWatchRemote WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = BACBA24F247DAD4800B402EE /* TeslaWatchRemote WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		BACBA255247DAD4800B402EE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BACBA254247DAD4800B402EE /* ContentView.swift */; };
+		BACBA257247DAD4800B402EE /* HostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BACBA256247DAD4800B402EE /* HostingController.swift */; };
+		BACBA259247DAD4800B402EE /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BACBA258247DAD4800B402EE /* ExtensionDelegate.swift */; };
+		BACBA25B247DAD4800B402EE /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BACBA25A247DAD4800B402EE /* NotificationController.swift */; };
+		BACBA25D247DAD4800B402EE /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BACBA25C247DAD4800B402EE /* NotificationView.swift */; };
+		BACBA25F247DAD4800B402EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BACBA25E247DAD4800B402EE /* Assets.xcassets */; };
+		BACBA262247DAD4800B402EE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BACBA261247DAD4800B402EE /* Preview Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BACBA242247DAD4500B402EE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BACBA236247DAD4500B402EE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BACBA23F247DAD4500B402EE;
+			remoteInfo = "TeslaWatchRemote WatchKit App";
+		};
+		BACBA251247DAD4800B402EE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BACBA236247DAD4500B402EE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BACBA24E247DAD4800B402EE;
+			remoteInfo = "TeslaWatchRemote WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BACBA26A247DAD4800B402EE /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				BACBA250247DAD4800B402EE /* TeslaWatchRemote WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BACBA26E247DAD4800B402EE /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				BACBA241247DAD4500B402EE /* TeslaWatchRemote WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		BACBA23C247DAD4500B402EE /* TeslaWatchRemote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TeslaWatchRemote.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BACBA240247DAD4500B402EE /* TeslaWatchRemote WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TeslaWatchRemote WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BACBA246247DAD4500B402EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		BACBA248247DAD4700B402EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BACBA24A247DAD4700B402EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BACBA24F247DAD4800B402EE /* TeslaWatchRemote WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "TeslaWatchRemote WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BACBA254247DAD4800B402EE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		BACBA256247DAD4800B402EE /* HostingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostingController.swift; sourceTree = "<group>"; };
+		BACBA258247DAD4800B402EE /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		BACBA25A247DAD4800B402EE /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		BACBA25C247DAD4800B402EE /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		BACBA25E247DAD4800B402EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BACBA261247DAD4800B402EE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BACBA263247DAD4800B402EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BACBA264247DAD4800B402EE /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BACBA24C247DAD4800B402EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BACBA235247DAD4500B402EE = {
+			isa = PBXGroup;
+			children = (
+				BACBA244247DAD4500B402EE /* TeslaWatchRemote WatchKit App */,
+				BACBA253247DAD4800B402EE /* TeslaWatchRemote WatchKit Extension */,
+				BACBA23D247DAD4500B402EE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BACBA23D247DAD4500B402EE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BACBA23C247DAD4500B402EE /* TeslaWatchRemote.app */,
+				BACBA240247DAD4500B402EE /* TeslaWatchRemote WatchKit App.app */,
+				BACBA24F247DAD4800B402EE /* TeslaWatchRemote WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BACBA244247DAD4500B402EE /* TeslaWatchRemote WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				BACBA245247DAD4500B402EE /* Interface.storyboard */,
+				BACBA248247DAD4700B402EE /* Assets.xcassets */,
+				BACBA24A247DAD4700B402EE /* Info.plist */,
+			);
+			path = "TeslaWatchRemote WatchKit App";
+			sourceTree = "<group>";
+		};
+		BACBA253247DAD4800B402EE /* TeslaWatchRemote WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				BACBA254247DAD4800B402EE /* ContentView.swift */,
+				BACBA256247DAD4800B402EE /* HostingController.swift */,
+				BACBA258247DAD4800B402EE /* ExtensionDelegate.swift */,
+				BACBA25A247DAD4800B402EE /* NotificationController.swift */,
+				BACBA25C247DAD4800B402EE /* NotificationView.swift */,
+				BACBA25E247DAD4800B402EE /* Assets.xcassets */,
+				BACBA263247DAD4800B402EE /* Info.plist */,
+				BACBA264247DAD4800B402EE /* PushNotificationPayload.apns */,
+				BACBA260247DAD4800B402EE /* Preview Content */,
+			);
+			path = "TeslaWatchRemote WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		BACBA260247DAD4800B402EE /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				BACBA261247DAD4800B402EE /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BACBA23B247DAD4500B402EE /* TeslaWatchRemote */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BACBA26F247DAD4800B402EE /* Build configuration list for PBXNativeTarget "TeslaWatchRemote" */;
+			buildPhases = (
+				BACBA23A247DAD4500B402EE /* Resources */,
+				BACBA26E247DAD4800B402EE /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BACBA243247DAD4500B402EE /* PBXTargetDependency */,
+			);
+			name = TeslaWatchRemote;
+			productName = TeslaWatchRemote;
+			productReference = BACBA23C247DAD4500B402EE /* TeslaWatchRemote.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		BACBA23F247DAD4500B402EE /* TeslaWatchRemote WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BACBA26B247DAD4800B402EE /* Build configuration list for PBXNativeTarget "TeslaWatchRemote WatchKit App" */;
+			buildPhases = (
+				BACBA23E247DAD4500B402EE /* Resources */,
+				BACBA26A247DAD4800B402EE /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BACBA252247DAD4800B402EE /* PBXTargetDependency */,
+			);
+			name = "TeslaWatchRemote WatchKit App";
+			productName = "TeslaWatchRemote WatchKit App";
+			productReference = BACBA240247DAD4500B402EE /* TeslaWatchRemote WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		BACBA24E247DAD4800B402EE /* TeslaWatchRemote WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BACBA267247DAD4800B402EE /* Build configuration list for PBXNativeTarget "TeslaWatchRemote WatchKit Extension" */;
+			buildPhases = (
+				BACBA24B247DAD4800B402EE /* Sources */,
+				BACBA24C247DAD4800B402EE /* Frameworks */,
+				BACBA24D247DAD4800B402EE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TeslaWatchRemote WatchKit Extension";
+			productName = "TeslaWatchRemote WatchKit Extension";
+			productReference = BACBA24F247DAD4800B402EE /* TeslaWatchRemote WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BACBA236247DAD4500B402EE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = "Henry Paulino";
+				TargetAttributes = {
+					BACBA23B247DAD4500B402EE = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					BACBA23F247DAD4500B402EE = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					BACBA24E247DAD4800B402EE = {
+						CreatedOnToolsVersion = 11.5;
+					};
+				};
+			};
+			buildConfigurationList = BACBA239247DAD4500B402EE /* Build configuration list for PBXProject "TeslaWatchRemote" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BACBA235247DAD4500B402EE;
+			productRefGroup = BACBA23D247DAD4500B402EE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BACBA23B247DAD4500B402EE /* TeslaWatchRemote */,
+				BACBA23F247DAD4500B402EE /* TeslaWatchRemote WatchKit App */,
+				BACBA24E247DAD4800B402EE /* TeslaWatchRemote WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BACBA23A247DAD4500B402EE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BACBA23E247DAD4500B402EE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BACBA249247DAD4700B402EE /* Assets.xcassets in Resources */,
+				BACBA247247DAD4500B402EE /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BACBA24D247DAD4800B402EE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BACBA262247DAD4800B402EE /* Preview Assets.xcassets in Resources */,
+				BACBA25F247DAD4800B402EE /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BACBA24B247DAD4800B402EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BACBA257247DAD4800B402EE /* HostingController.swift in Sources */,
+				BACBA255247DAD4800B402EE /* ContentView.swift in Sources */,
+				BACBA25B247DAD4800B402EE /* NotificationController.swift in Sources */,
+				BACBA259247DAD4800B402EE /* ExtensionDelegate.swift in Sources */,
+				BACBA25D247DAD4800B402EE /* NotificationView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BACBA243247DAD4500B402EE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BACBA23F247DAD4500B402EE /* TeslaWatchRemote WatchKit App */;
+			targetProxy = BACBA242247DAD4500B402EE /* PBXContainerItemProxy */;
+		};
+		BACBA252247DAD4800B402EE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BACBA24E247DAD4800B402EE /* TeslaWatchRemote WatchKit Extension */;
+			targetProxy = BACBA251247DAD4800B402EE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BACBA245247DAD4500B402EE /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BACBA246247DAD4500B402EE /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BACBA265247DAD4800B402EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BACBA266247DAD4800B402EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BACBA268247DAD4800B402EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"TeslaWatchRemote WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = M52W2L8ZQV;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "TeslaWatchRemote WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.corasan.TeslaWatchRemote.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Debug;
+		};
+		BACBA269247DAD4800B402EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"TeslaWatchRemote WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = M52W2L8ZQV;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "TeslaWatchRemote WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.corasan.TeslaWatchRemote.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Release;
+		};
+		BACBA26C247DAD4800B402EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M52W2L8ZQV;
+				IBSC_MODULE = TeslaWatchRemote_WatchKit_Extension;
+				INFOPLIST_FILE = "TeslaWatchRemote WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.corasan.TeslaWatchRemote.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Debug;
+		};
+		BACBA26D247DAD4800B402EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M52W2L8ZQV;
+				IBSC_MODULE = TeslaWatchRemote_WatchKit_Extension;
+				INFOPLIST_FILE = "TeslaWatchRemote WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.corasan.TeslaWatchRemote.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Release;
+		};
+		BACBA270247DAD4800B402EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = M52W2L8ZQV;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.corasan.TeslaWatchRemote;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		BACBA271247DAD4800B402EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = M52W2L8ZQV;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.corasan.TeslaWatchRemote;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BACBA239247DAD4500B402EE /* Build configuration list for PBXProject "TeslaWatchRemote" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BACBA265247DAD4800B402EE /* Debug */,
+				BACBA266247DAD4800B402EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BACBA267247DAD4800B402EE /* Build configuration list for PBXNativeTarget "TeslaWatchRemote WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BACBA268247DAD4800B402EE /* Debug */,
+				BACBA269247DAD4800B402EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BACBA26B247DAD4800B402EE /* Build configuration list for PBXNativeTarget "TeslaWatchRemote WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BACBA26C247DAD4800B402EE /* Debug */,
+				BACBA26D247DAD4800B402EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BACBA26F247DAD4800B402EE /* Build configuration list for PBXNativeTarget "TeslaWatchRemote" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BACBA270247DAD4800B402EE /* Debug */,
+				BACBA271247DAD4800B402EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BACBA236247DAD4500B402EE /* Project object */;
+}
